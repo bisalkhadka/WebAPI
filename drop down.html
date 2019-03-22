@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Javascript</title>
+        <script>
+            function Click(){
+var a=parseInt(document.getElementById("one").value);
+var b=parseInt(document.getElementById("two").value);
+var c=document.getElementById("drop").value;
+    if(c=="Subtract"){
+var d=a-b;
+alert(d);
+}else if(c=="Add"){
+var d=a+b;
+alert(d);
+}else if(c=="Multiply"){
+var d=a*b;
+alert(d);
+}else{
+    alert("You dont have calculation")
+}
+            }
+          
+            
+        </script>
+    </head>
+    
+        <body>
+<form>
+    <p>Enter number<input type="text" id="one"/></p>
+    <p>Enter number<input type="text" id="two"/></p>
+    <p>
+        <select id="drop">
+            <option>Choose one</option>
+            <option>Add</option>
+            <option>Subtract</option>
+            <option>Multiply</option>
+        </select></p>
+    <p><button onclick="Click()">Click</button></p>
+  
+</form>            
+        </body>
+
+</html>
